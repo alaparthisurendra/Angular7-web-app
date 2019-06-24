@@ -1,0 +1,12 @@
+<p>
+  {{IoremIpsum|uppercase}}
+  {{IoremIpsum|ellipsis}}
+  {{IoremIpsum|ellipsis :"30" }}
+  </p>
+  <p>The hero's birthday is {{ birthday | date: 'dd MMMM, yyyy hh:mm:ss a'}}</p>
+  <hr><hr>
+  <br>
+  <h2>Cross component communication via Common shared services</h2>
+  Name is:  {{ profileName }} <br><br>
+  <input type="text" [(ngModel)]="newName"> <br><br>
+  <button type="button" (click)="updateNameHandler()">Update Name</button>

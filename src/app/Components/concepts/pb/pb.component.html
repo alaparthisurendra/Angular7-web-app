@@ -1,0 +1,8 @@
+<div>
+  <input type="text" [value]="appName" />
+  <div class="red">Testing</div>
+  <h2 [ngClass]="{ 'red': !isLoggedIn, 'green': isLoggedIn }">
+    checking auth...
+  </h2>
+  <button (click)="loginHandler()">Login</button>
+</div>
